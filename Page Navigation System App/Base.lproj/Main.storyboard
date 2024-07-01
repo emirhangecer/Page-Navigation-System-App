@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="33" y="4"/>
         </scene>
-        <!--View Controller-->
+        <!--Oyun EkraniVC-->
         <scene sceneID="wbK-ZO-pxR">
             <objects>
-                <viewController id="Vwd-fJ-BRM" sceneMemberID="viewController">
+                <viewController id="Vwd-fJ-BRM" customClass="OyunEkraniVC" customModule="Page_Navigation_System_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LAl-Uc-4qm">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,10 +38,10 @@
             </objects>
             <point key="canvasLocation" x="752" y="4"/>
         </scene>
-        <!--View Controller-->
+        <!--Sonuc EkraniVC-->
         <scene sceneID="5cE-Xq-xBE">
             <objects>
-                <viewController id="EkL-7d-e7c" sceneMemberID="viewController">
+                <viewController id="EkL-7d-e7c" customClass="SonucEkraniVC" customModule="Page_Navigation_System_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h11-1Z-rD1">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
