@@ -15,9 +15,44 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anasayfa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNz-Rq-SgP">
+                                <rect key="frame" x="116.33333333333333" y="159" width="197.66666666666669" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEd-bK-iCt">
+                                <rect key="frame" x="188.66666666666666" y="445.66666666666669" width="53" height="41"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Yap"/>
+                                <connections>
+                                    <action selector="buttonYap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zBp-31-Bo2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1Z-8w-Zvk">
+                                <rect key="frame" x="182.66666666666666" y="757" width="65" height="41"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Başla"/>
+                                <connections>
+                                    <action selector="buttonBasla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3zc-kK-auY"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="d1Z-8w-Zvk" secondAttribute="bottom" constant="100" id="H8U-SF-mh7"/>
+                            <constraint firstItem="QEd-bK-iCt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="J8r-JF-LKb"/>
+                            <constraint firstItem="dNz-Rq-SgP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O9c-Aj-WD4"/>
+                            <constraint firstItem="d1Z-8w-Zvk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RqL-oy-I88"/>
+                            <constraint firstItem="dNz-Rq-SgP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="grV-C0-JvP"/>
+                            <constraint firstItem="QEd-bK-iCt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qPr-21-xyv"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="labelAnasayfa" destination="dNz-Rq-SgP" id="ez0-FY-lDq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -30,8 +65,34 @@
                     <view key="view" contentMode="scaleToFill" id="LAl-Uc-4qm">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oyun Ekranı" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7c-cQ-XnA">
+                                <rect key="frame" x="86.666666666666686" y="159" width="257" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqM-i6-V5e">
+                                <rect key="frame" x="187" y="445.66666666666669" width="56" height="41"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Geri"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUh-lJ-gdB">
+                                <rect key="frame" x="177.66666666666666" y="757" width="75" height="41"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="OAh-oJ-kyP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cUh-lJ-gdB" firstAttribute="centerX" secondItem="LAl-Uc-4qm" secondAttribute="centerX" id="Gar-Bp-VQw"/>
+                            <constraint firstItem="zqM-i6-V5e" firstAttribute="centerY" secondItem="LAl-Uc-4qm" secondAttribute="centerY" id="OIx-8O-6UO"/>
+                            <constraint firstItem="zqM-i6-V5e" firstAttribute="centerX" secondItem="LAl-Uc-4qm" secondAttribute="centerX" id="Pja-p0-Emi"/>
+                            <constraint firstItem="OAh-oJ-kyP" firstAttribute="bottom" secondItem="cUh-lJ-gdB" secondAttribute="bottom" constant="100" id="Wat-P6-o2n"/>
+                            <constraint firstItem="h7c-cQ-XnA" firstAttribute="centerX" secondItem="LAl-Uc-4qm" secondAttribute="centerX" id="z22-9u-udR"/>
+                            <constraint firstItem="h7c-cQ-XnA" firstAttribute="top" secondItem="OAh-oJ-kyP" secondAttribute="top" constant="100" id="zuu-ap-6nk"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s41-sZ-IV1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -45,8 +106,27 @@
                     <view key="view" contentMode="scaleToFill" id="h11-1Z-rD1">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sonuç Ekranı" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDc-3Z-E2V">
+                                <rect key="frame" x="76.666666666666686" y="159" width="277" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZl-NM-4Ky">
+                                <rect key="frame" x="180.66666666666666" y="757" width="69" height="41"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Kapat"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="yaI-nq-kpL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PDc-3Z-E2V" firstAttribute="top" secondItem="yaI-nq-kpL" secondAttribute="top" constant="100" id="FLw-wZ-tiw"/>
+                            <constraint firstItem="yaI-nq-kpL" firstAttribute="bottom" secondItem="TZl-NM-4Ky" secondAttribute="bottom" constant="100" id="TB3-zr-gys"/>
+                            <constraint firstItem="TZl-NM-4Ky" firstAttribute="centerX" secondItem="h11-1Z-rD1" secondAttribute="centerX" id="pLf-1w-oJx"/>
+                            <constraint firstItem="PDc-3Z-E2V" firstAttribute="centerX" secondItem="h11-1Z-rD1" secondAttribute="centerX" id="tvI-r1-ndu"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u2J-VV-2ZL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -9,11 +9,17 @@ import UIKit
 
 class MainPageVC: UIViewController {
 
+    @IBOutlet weak var labelAnasayfa: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func buttonYap(_ sender: Any) {
+    }
+    
+    @IBAction func buttonBasla(_ sender: Any) {
+    }
+    
 }
 
