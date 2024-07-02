@@ -22,6 +22,7 @@ class MainPageVC: UIViewController {
     }
     
     @IBAction func buttonBasla(_ sender: Any) {
+        performSegue(withIdentifier: "OyunEkranınaGecis", sender: nil)
     }
     
 }

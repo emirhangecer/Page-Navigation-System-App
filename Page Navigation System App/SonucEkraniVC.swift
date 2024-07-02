@@ -16,6 +16,7 @@ class SonucEkraniVC: UIViewController {
     }
    
     @IBAction func buttonKapat(_ sender: Any) {
+        self.dismiss(animated: true)
     }
     
 }

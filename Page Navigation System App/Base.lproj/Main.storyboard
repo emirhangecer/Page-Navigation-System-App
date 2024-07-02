@@ -36,7 +36,6 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Başla"/>
                                 <connections>
                                     <action selector="buttonBasla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3zc-kK-auY"/>
-                                    <segue destination="Vwd-fJ-BRM" kind="show" id="Jr6-ds-Dsg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -56,6 +55,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="labelAnasayfa" destination="dNz-Rq-SgP" id="ez0-FY-lDq"/>
+                        <segue destination="Vwd-fJ-BRM" kind="show" identifier="OyunEkranınaGecis" id="zJc-4j-VaW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -76,27 +76,30 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqM-i6-V5e">
-                                <rect key="frame" x="187" y="445.66666666666669" width="56" height="41"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Geri"/>
-                                <connections>
-                                    <action selector="buttonBitir:" destination="Vwd-fJ-BRM" eventType="touchUpInside" id="6G1-bV-CAh"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUh-lJ-gdB">
                                 <rect key="frame" x="188" y="757" width="54.333333333333343" height="41"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Bitir"/>
+                                <connections>
+                                    <action selector="buttonBitir:" destination="Vwd-fJ-BRM" eventType="touchUpInside" id="zuE-zd-O9l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DzV-Hb-D7S">
+                                <rect key="frame" x="187" y="445.66666666666669" width="56" height="41"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Geri"/>
+                                <connections>
+                                    <action selector="buttonGeri:" destination="Vwd-fJ-BRM" eventType="touchUpInside" id="eax-J1-XdX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OAh-oJ-kyP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="cUh-lJ-gdB" firstAttribute="centerX" secondItem="LAl-Uc-4qm" secondAttribute="centerX" id="Gar-Bp-VQw"/>
-                            <constraint firstItem="zqM-i6-V5e" firstAttribute="centerY" secondItem="LAl-Uc-4qm" secondAttribute="centerY" id="OIx-8O-6UO"/>
-                            <constraint firstItem="zqM-i6-V5e" firstAttribute="centerX" secondItem="LAl-Uc-4qm" secondAttribute="centerX" id="Pja-p0-Emi"/>
                             <constraint firstItem="OAh-oJ-kyP" firstAttribute="bottom" secondItem="cUh-lJ-gdB" secondAttribute="bottom" constant="100" id="Wat-P6-o2n"/>
+                            <constraint firstItem="DzV-Hb-D7S" firstAttribute="centerY" secondItem="LAl-Uc-4qm" secondAttribute="centerY" id="qoB-RU-GFd"/>
+                            <constraint firstItem="DzV-Hb-D7S" firstAttribute="centerX" secondItem="LAl-Uc-4qm" secondAttribute="centerX" id="rNc-DQ-c7P"/>
                             <constraint firstItem="h7c-cQ-XnA" firstAttribute="centerX" secondItem="LAl-Uc-4qm" secondAttribute="centerX" id="z22-9u-udR"/>
                             <constraint firstItem="h7c-cQ-XnA" firstAttribute="top" secondItem="OAh-oJ-kyP" secondAttribute="top" constant="100" id="zuu-ap-6nk"/>
                         </constraints>
@@ -104,6 +107,9 @@
                     <navigationItem key="navigationItem" title="Oyun Ekranı" id="epA-ch-l2a">
                         <barButtonItem key="backBarButtonItem" title="Geri" id="Yi6-gE-gHw"/>
                     </navigationItem>
+                    <connections>
+                        <segue destination="EkL-7d-e7c" kind="presentation" identifier="SonucEkraninaGecis" id="Lp8-Vy-tdI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s41-sZ-IV1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -114,17 +120,17 @@
             <objects>
                 <viewController id="EkL-7d-e7c" customClass="SonucEkraniVC" customModule="Page_Navigation_System_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h11-1Z-rD1">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sonuç Ekranı" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDc-3Z-E2V">
-                                <rect key="frame" x="76.666666666666686" y="159" width="277" height="60"/>
+                                <rect key="frame" x="76.666666666666686" y="100" width="277" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZl-NM-4Ky">
-                                <rect key="frame" x="180.66666666666666" y="757" width="69" height="41"/>
+                                <rect key="frame" x="180.66666666666666" y="781" width="69" height="41"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Kapat"/>
                                 <connections>
