@@ -15,4 +15,11 @@ class OyunEkraniVC: UIViewController {
         // Do any additional setup after loading the view.
     }
  
+    
+    @IBAction func buttonGeri(_ sender: Any) {
+    }
+    
+    @IBAction func buttonBitir(_ sender: Any) {
+    }
+    
 }
