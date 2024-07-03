@@ -10,13 +10,25 @@ import UIKit
 class MainPageVC: UIViewController {
 
     @IBOutlet weak var labelAnasayfa: UILabel!
-    override func viewDidLoad() {
+    override func viewDidLoad() { // Uygulama ilk açıldığında çalışırı ve bir kere çalışır!
         super.viewDidLoad()
         
         labelAnasayfa.text = "Hoşgeldiniz"
+        print("viewDidload çalıştı")
        
     }
+    
+    override func viewWillAppear(_ animated: Bool) { // Sayfa her görünür olduğunda çalışır
+        print("viewWillAppear çalıştı")
+            // Sayfaya her geri dönüldüğünde çalışır
+    }
+    override func viewWillDisappear(_ animated: Bool) { // Sayfa her görünmez olduğunda çalışır.
+        print("viewWillDisappear çalıştı")
+    }
 
+    
+    
+    
     @IBAction func buttonYap(_ sender: Any) {
         labelAnasayfa.text = "Merhaba"
     }
