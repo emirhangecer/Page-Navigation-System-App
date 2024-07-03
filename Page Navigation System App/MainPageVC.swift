@@ -22,7 +22,8 @@ class MainPageVC: UIViewController {
     }
     
     @IBAction func buttonBasla(_ sender: Any) {
-        performSegue(withIdentifier: "OyunEkranınaGecis", sender: "Merhaba")
+        let kisi = Kisiler(ad: "Emirhan", yas: 21, boy: 1.80, bekar: true)
+        performSegue(withIdentifier: "OyunEkranınaGecis", sender: kisi )
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -31,11 +32,9 @@ class MainPageVC: UIViewController {
         if segue.identifier == "OyunEkranınaGecis" {
             print("OyunEkranınaGecis Çalıştı")
             
-            if let veri = sender as? String {
-                print("veri : \(veri)")
-                
+            if let veri = sender as? Kisiler {
                 let gidilecekVC = segue.destination as! OyunEkraniVC
-                gidilecekVC.mesaj = veri
+                gidilecekVC.kisi = veri
             }
         }
     }

@@ -15,6 +15,7 @@
 		1EE616C72C3335370034AEE6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1EE616C62C3335370034AEE6 /* Base */; };
 		1EE616CF2C33381D0034AEE6 /* OyunEkraniVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE616CE2C33381D0034AEE6 /* OyunEkraniVC.swift */; };
 		1EE616D12C3338750034AEE6 /* SonucEkraniVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE616D02C3338750034AEE6 /* SonucEkraniVC.swift */; };
+		1EFD69152C3588C60099F020 /* Kisiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFD69142C3588C60099F020 /* Kisiler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1EE616C82C3335370034AEE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EE616CE2C33381D0034AEE6 /* OyunEkraniVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OyunEkraniVC.swift; sourceTree = "<group>"; };
 		1EE616D02C3338750034AEE6 /* SonucEkraniVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonucEkraniVC.swift; sourceTree = "<group>"; };
+		1EFD69142C3588C60099F020 /* Kisiler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kisiler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				1EE616BE2C3335360034AEE6 /* MainPageVC.swift */,
 				1EE616CE2C33381D0034AEE6 /* OyunEkraniVC.swift */,
 				1EE616D02C3338750034AEE6 /* SonucEkraniVC.swift */,
+				1EFD69142C3588C60099F020 /* Kisiler.swift */,
 				1EE616C02C3335360034AEE6 /* Main.storyboard */,
 				1EE616C32C3335370034AEE6 /* Assets.xcassets */,
 				1EE616C52C3335370034AEE6 /* LaunchScreen.storyboard */,
@@ -149,6 +152,7 @@
 				1EE616BB2C3335360034AEE6 /* AppDelegate.swift in Sources */,
 				1EE616BD2C3335360034AEE6 /* SceneDelegate.swift in Sources */,
 				1EE616CF2C33381D0034AEE6 /* OyunEkraniVC.swift in Sources */,
+				1EFD69152C3588C60099F020 /* Kisiler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

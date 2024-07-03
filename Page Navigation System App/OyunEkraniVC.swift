@@ -9,13 +9,17 @@ import UIKit
 
 class OyunEkraniVC: UIViewController {
     
-    var mesaj:String?
+    var kisi : Kisiler?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let m = mesaj {
-            print("OyunEkraniVC : \(m)")
+        if let k = kisi {
+            print("-----OyunEkraniVC-----")
+            print("Kisi adı    : \(k.ad!)")
+            print("Kisi yası   : \(k.yas!)")
+            print("Kisi boyu   : \(k.boy!)")
+            print("Kisi bekar  : \(k.bekar!)")
         }
 
     }
