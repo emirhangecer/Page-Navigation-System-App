@@ -52,6 +52,20 @@
                     </view>
                     <navigationItem key="navigationItem" title="Anasayfa" id="ZQd-DL-fzM">
                         <barButtonItem key="backBarButtonItem" title="Geri" id="Rgj-fx-fHU"/>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="VrS-nS-NOD">
+                                <color key="tintColor" systemColor="systemMintColor"/>
+                                <connections>
+                                    <action selector="buttonAdd:" destination="BYZ-38-t0r" id="8In-EZ-VWf"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="save" id="KhW-0d-Pyp">
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <connections>
+                                    <action selector="buttonSave:" destination="BYZ-38-t0r" id="oK1-v6-wIU"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="labelAnasayfa" destination="dNz-Rq-SgP" id="ez0-FY-lDq"/>
@@ -174,6 +188,12 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
