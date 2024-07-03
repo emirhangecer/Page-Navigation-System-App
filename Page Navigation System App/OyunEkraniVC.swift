@@ -8,9 +8,15 @@
 import UIKit
 
 class OyunEkraniVC: UIViewController {
+    
+    var mesaj:String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let m = mesaj {
+            print("OyunEkraniVC : \(m)")
+        }
 
     }
     @IBAction func buttonBitir(_ sender: Any) {
@@ -22,4 +28,5 @@ class OyunEkraniVC: UIViewController {
     @IBAction func buttonGeri(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
+    
 }
